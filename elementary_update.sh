@@ -39,35 +39,35 @@ function install_package()
     case $1 in
         "1")
             echo -e "安裝 Elementary Tweak"
-            sudo install elementary-tweaks
+            sudo apt-get install elementary-tweaks -y
             ;;
         "2")
             echo -e "安裝 WINGPANEL SLIM"
-            sudo apt-get install wingpanel-slim
+            sudo apt-get install wingpanel-slim -y
             ;;
         "3")
             echo -e "安裝 WINGPANEL SLIM"
-            sudo apt-get install indicator-synapse
+            sudo apt-get install indicator-synapse -y 
             ;;
         "4")
             echo -e "安裝 Audience"
-            sudo apt-get install audience
+            sudo apt-get install audience -y
             ;;
         "5")
             echo -e "安裝 佈景主題"
-            sudo apt-get install elementary-blue-theme elementary-champagne-theme elementary-colors-theme elementary-dark-theme elementary-harvey-theme elementary-lion-theme elementary-matteblack-theme elementary-milk-theme elementary-plastico-theme elementary-whit-e-theme
+            sudo apt-get install elementary-blue-theme elementary-champagne-theme elementary-colors-theme elementary-dark-theme elementary-harvey-theme elementary-lion-theme elementary-matteblack-theme elementary-milk-theme elementary-plastico-theme elementary-whit-e-theme -y
             ;;
         "6")
             echo -e "安裝 圖示主題"
-            sudo apt-get install elementary-elfaenza-icons elementary-emod-icons elementary-enumix-utouch-icons elementary-nitrux-icons elementary-taprevival-icons
+            sudo apt-get install elementary-elfaenza-icons elementary-emod-icons elementary-enumix-utouch-icons elementary-nitrux-icons elementary-taprevival-icons -y
             ;;
         "7")
             echo -e "安裝 其他佈景主題"
-            sudo apt-get install elementary-thirdparty-icons elementary-plank-themes
+            sudo apt-get install elementary-thirdparty-icons elementary-plank-themes -y
             ;;
         "8")
             echo -e "安裝 桌布集"
-            sudo apt-get install elementary-wallpaper-collection
+            sudo apt-get install elementary-wallpaper-collection -y
             ;;
     esac
 }
@@ -95,7 +95,7 @@ read option
     case $option in
         "1")
             show_package;
-            sudo apt-get install elementary-tweaks wingpanel-slim indicator-synapse elementary-blue-theme elementary-champagne-theme elementary-colors-theme elementary-dark-theme elementary-harvey-theme elementary-lion-theme elementary-matteblack-theme elementary-milk-theme elementary-plastico-theme elementary-whit-e-theme elementary-elfaenza-icons elementary-emod-icons elementary-enumix-utouch-icons elementary-nitrux-icons elementary-taprevival-icons elementary-thirdparty-icons elementary-plank-themes elementary-wallpaper-collection audience
+            sudo apt-get install elementary-tweaks wingpanel-slim indicator-synapse elementary-blue-theme elementary-champagne-theme elementary-colors-theme elementary-dark-theme elementary-harvey-theme elementary-lion-theme elementary-matteblack-theme elementary-milk-theme elementary-plastico-theme elementary-whit-e-theme elementary-elfaenza-icons elementary-emod-icons elementary-enumix-utouch-icons elementary-nitrux-icons elementary-taprevival-icons elementary-thirdparty-icons elementary-plank-themes elementary-wallpaper-collection audience -y
            ;;
         "2")
             show_package;
